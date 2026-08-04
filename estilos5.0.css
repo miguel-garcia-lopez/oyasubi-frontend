@@ -1,0 +1,1058 @@
+/*========================================
+            CONFIGURACIÓN GENERAL
+========================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+:root{
+
+    --color-principal:#ff2d95;
+    --color-secundario:#ff6bc1;
+    --fondo:#0a0a0a;
+    --gris:#1d1d1d;
+    --blanco:#ffffff;
+
+}
+
+body{
+
+    background:var(--fondo);
+
+    color:var(--blanco);
+
+    background-image:url("imagenes2.0/estrellas2.0.png");
+
+    background-repeat:no repeat;
+
+    background-size:500px;
+
+    background-attachment:fixed;
+
+}
+
+
+/*========================================
+        BARRA DE NAVEGACIÓN
+========================================*/
+
+header{
+
+    width:100%;
+
+    height:70px;
+
+    background:#000;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+nav{
+
+    width:4%;
+
+    height:100%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+nav ul li a i{
+
+    margin-right:8px;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--color-principal);
+
+    text-shadow:
+
+    0 0 8px var(--color-principal),
+
+    0 0 18px var(--color-principal),
+
+    0 0 30px var(--color-principal);
+
+}
+
+
+/*========================================
+                BUSCADOR
+========================================*/
+
+.buscar{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.buscar input{
+
+    width:240px;
+
+    height:40px;
+
+    border:none;
+
+    outline:none;
+
+    padding-left:15px;
+
+    border-radius:8px 0 0 8px;
+
+    font-size:16px;
+
+}
+
+.buscar button{
+
+    width:45px;
+
+    height:40px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:var(--color-principal);
+
+    color:white;
+
+    border-radius:0 8px 8px 0;
+
+    transition:.3s;
+
+    box-shadow:
+
+    0 0 10px var(--color-principal),
+
+    0 0 20px var(--color-principal);
+
+}
+
+.buscar button:hover{
+
+    box-shadow:
+
+    0 0 20px var(--color-principal),
+
+    0 0 35px var(--color-principal);
+
+}
+
+
+/*========================================
+                BANNER
+========================================*/
+
+.banner{
+
+ 
+
+   
+    
+    width:100%;
+    height:450px;
+
+    background-image:url("imagenes2.0/estrellas2.0.png");
+    background-size:cover;
+    background-position:center;
+
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.logo{
+
+    width:700px;
+
+    height:auto;
+
+}/*========================================
+              POPULARES
+========================================*/
+
+.populares{
+
+    width:90%;
+
+    margin:60px auto;
+
+    padding:40px;
+
+    background:rgba(15,15,15,0.75);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(3px);
+
+}
+
+.populares h2{
+
+    color:var(--color-principal);
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+    text-shadow:
+    0 0 8px var(--color-principal),
+    0 0 18px var(--color-principal),
+    0 0 35px var(--color-principal);
+
+}
+
+.contenedor-populares{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:30px;
+
+}
+
+
+
+/*========================================
+              VER ANIME
+========================================*/
+
+.animes{
+
+    width:90%;
+
+    margin:60px auto;
+
+    padding:40px;
+
+    background:rgba(15,15,15,0.75);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(3px);
+
+}
+
+.animes h2{
+
+    color:var(--color-principal);
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+    text-shadow:
+    0 0 8px var(--color-principal),
+    0 0 18px var(--color-principal),
+    0 0 35px var(--color-principal);
+
+}
+
+.contenedor{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:30px;
+
+}
+
+.boton-todas{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:40px;
+
+}
+
+.boton-todas a{
+
+    text-decoration:none;
+
+    background:var(--color-principal);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    padding:14px 35px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    box-shadow:
+
+    0 0 12px var(--color-principal),
+
+    0 0 25px var(--color-principal),
+
+    0 0 40px var(--color-principal);
+
+}
+
+.boton-todas a:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+
+    0 0 20px var(--color-principal),
+
+    0 0 35px var(--color-principal),
+
+    0 0 55px var(--color-principal);
+
+}
+
+
+
+/*========================================
+              PELÍCULAS
+========================================*/
+
+.peliculas{
+
+    width:90%;
+
+    margin:60px auto;
+
+    padding:40px;
+
+    background:rgba(15,15,15,0.75);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(3px);
+
+}
+
+.peliculas h2{
+
+    color:var(--color-principal);
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+    text-shadow:
+    0 0 8px var(--color-principal),
+    0 0 18px var(--color-principal),
+    0 0 35px var(--color-principal);
+
+}
+
+.contenedor-peliculas{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:30px;
+
+}/*========================================
+                TARJETAS
+========================================*/
+
+.tarjeta{
+
+    text-align:center;
+
+}
+
+.imagen{
+
+    width:100%;
+
+    height:260px;
+
+    background:var(--gris);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    border:2px solid transparent;
+
+    transition:all .35s ease;
+
+}
+
+.imagen img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.imagen:hover{
+
+    transform:scale(1.05);
+
+    border:2px solid var(--color-principal);
+
+    box-shadow:
+
+    0 0 10px var(--color-principal),
+
+    0 0 20px var(--color-principal),
+
+    0 0 40px var(--color-principal);
+
+}
+
+.imagen:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.tarjeta p{
+
+    margin-top:12px;
+
+    color:white;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.tarjeta:hover p{
+
+    color:var(--color-principal);
+
+    text-shadow:
+
+    0 0 8px var(--color-principal),
+
+    0 0 18px var(--color-principal);
+
+}
+
+
+/*========================================
+            SCROLL PERSONALIZADO
+========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--color-principal);
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--color-secundario);
+
+}
+
+
+/*========================================
+                ANIMACIONES
+========================================*/
+
+@keyframes brillo{
+
+    0%{
+
+        text-shadow:
+
+        0 0 5px var(--color-principal);
+
+    }
+
+    50%{
+
+        text-shadow:
+
+        0 0 15px var(--color-principal),
+
+        0 0 30px var(--color-principal);
+
+    }
+
+    100%{
+
+        text-shadow:
+
+        0 0 5px var(--color-principal);
+
+    }
+
+}
+
+.populares h2,
+.animes h2,
+.peliculas h2{
+
+    animation:brillo 2.5s infinite;
+
+}
+
+
+/*========================================
+          RESPONSIVE TABLET
+========================================*/
+
+@media(max-width:1200px){
+
+    .contenedor,
+    .contenedor-populares,
+    .contenedor-peliculas{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
+
+
+/*========================================
+          RESPONSIVE MÓVIL
+========================================*/
+
+@media(max-width:900px){
+
+    nav{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px 0;
+          margin: 0;
+    
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        margin-bottom:20px;
+
+    }
+
+    .buscar{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .buscar input{
+
+        width:260px;
+
+    }
+
+    .logo{
+
+        width:90%;
+
+    }
+
+    .contenedor,
+    .contenedor-populares,
+    .contenedor-peliculas{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .contenedor,
+    .contenedor-populares,
+    .contenedor-peliculas{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .populares h2,
+    .animes h2,
+    .peliculas h2{
+
+        font-size:30px;
+
+    }
+  
+
+/*========================================
+              PAISAJE FINAL
+========================================*/
+
+
+
+}
+
+.fondo-final {
+    width: 100%;
+    height: 600px;
+
+    background-image: url("imagenes2.0/footer2.0.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*========================================
+            CONFIGURACIÓN GENERAL
+========================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+:root{
+
+    --color-principal:#ff2d95;
+    --color-secundario:#ff6bc1;
+    --fondo:#090909;
+    --gris:#1b1b1b;
+    --blanco:#ffffff;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--fondo);
+    color:var(--blanco);
+
+    background-image:url("imagenes2.0/estrellas2.0.png");
+    background-repeat:repeat;
+    background-size:500px;
+    background-attachment:fixed;
+
+}
+
+
+/*========================================
+            BARRA SUPERIOR
+========================================*/
+
+header{
+
+    width:100%;
+    height:70px;
+
+    background:#000;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    box-shadow:
+    0 0 10px #000,
+    0 0 20px #000;
+
+}
+
+nav{
+
+    width:90%;
+    height:100%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex
+        /*========================================
+                CONTENEDORES
+========================================*/
+
+.contenedor{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:30px;
+
+}
+
+
+/*========================================
+                TARJETAS
+========================================*/
+
+.tarjeta{
+
+    text-align:center;
+
+}
+
+.imagen{
+
+    width:100%;
+
+    height:270px;
+
+    background:var(--gris);
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    border:2px solid transparent;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.imagen img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+
+/*========================================
+            EFECTO HOVER
+========================================*/
+
+.imagen:hover{
+
+    transform:translateY(-8px);
+
+    border:2px solid var(--color-principal);
+
+    box-shadow:
+
+    0 0 12px var(--color-principal),
+
+    0 0 25px var(--color-principal),
+
+    0 0 45px var(--color-principal);
+
+}
+
+.imagen:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.tarjeta p{
+
+    margin-top:14px;
+
+    font-size:18px;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+.tarjeta:hover p{
+
+    color:var(--color-principal);
+
+    text-shadow:
+
+    0 0 8px var(--color-principal),
+
+    0 0 18px var(--color-principal),
+
+    0 0 28px var(--color-principal);
+
+}
+
+
+/*========================================
+            ANIMACIÓN ENTRADA
+========================================*/
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.tarjeta{
+
+    animation:aparecer .8s ease;
+
+}
+
+
+/*========================================
+            TITULOS BRILLO
+========================================*/
+
+@keyframes brillo{
+
+    0%{
+
+        text-shadow:
+
+        0 0 6px var(--color-principal);
+
+    }
+
+    50%{
+
+        text-shadow:
+
+        0 0 18px var(--color-principal),
+
+        0 0 35px var(--color-principal),
+
+        0 0 55px var(--color-principal);
+
+    }
+
+    100%{
+
+        text-shadow:
+
+        0 0 6px var(--color-principal);
+
+    }
+
+}
+
+.categoria h2{
+
+    animation:brillo 2.8s infinite;
+
+}
+
+
+/*========================================
+            SEPARACIÓN
+========================================*/
+
+.categoria:not(:last-child){
+
+    margin-bottom:80px;
+
+}/*========================================
+            PAGINACIÓN
+========================================*/
+
+.paginacion{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:70px 0 30px;
+
+}
+
+.pagina{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#1c1c1c;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+}
+
+.pagina:hover{
+
+    background:var(--color-principal);
+
+    box-shadow:
+
+    0 0 12px var(--color-principal),
+
+    0 0 25px var(--color-principal);
+
+}
+
+.pagina.activa{
+
+    background:var(--color-principal);
+
+    box-shadow:
+
+    0 0 15px var(--color-principal),
+
+    0 0 30px var(--color-principal),
+
+    0 0 45px var(--color-principal);
+
+}
+
+
+/*========================================
+        BOTONES ANTERIOR / SIGUIENTE
+========================================*/
+
+.navegacion-paginas{
+
+    width:90%;
+
+    margin:
+    
+
+
+
+
+
+
+
