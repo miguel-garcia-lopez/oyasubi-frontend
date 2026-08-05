@@ -110,7 +110,7 @@ nav ul li a:hover{
 
     0 0 8px var(--color-principal),
 
-    0 0 18px var(--color-principal),
+    0 0 48px var(--color-principal),
 
     0 0 30px var(--color-principal);
 
@@ -235,7 +235,7 @@ nav ul li a:hover{
 
 }
 
-.populares h2{
+h2{
 
     color:var(--color-principal);
 
@@ -773,6 +773,7 @@ nav ul{
     list-style:none;
 
     display:flex
+}
         /*========================================
                 CONTENEDORES
 ========================================*/
@@ -908,8 +909,8 @@ nav ul{
 
     }
 
-}
 
+}
 .tarjeta{
 
     animation:aparecer .8s ease;
@@ -1047,7 +1048,7 @@ nav ul{
 
     width:90%;
 
-    margin:
+    margin:left;
     
 
 
@@ -1056,3 +1057,4 @@ nav ul{
 
 
 
+}
