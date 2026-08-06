@@ -25,7 +25,7 @@ display: flex;
     justify-content: space-between;
         margin:auto;
     gap:35px;
-          text-decoration: none;
+          
 }
 .logo{
     height: 151px;
@@ -39,12 +39,14 @@ display: flex;
         margin-top: 27px;
              list-style:none;
     gap:35px;
-    color: white
+    color: white;
+       
 }
 a{
      gap:35px;
     color: white;
          font-size:18px;
+     text-decoration: none;
    
     
 }
@@ -52,7 +54,7 @@ a{
     display: flex;
     align-items: center;
           justify-content: space-between; 
-    margin-top: -33px
+    margin-top: -44px
      
 }
 nav ul li a:hover{
@@ -64,6 +66,7 @@ nav ul li a:hover{
     0 0 18px var(--color-principal),
 
     0 0 30px var(--color-principal);
+   
  
 
 }
@@ -97,7 +100,193 @@ nav ul li a:hover{
 body{
   background-image:url("imagenes2.0/estrellas2.0.png"); 
 }
- 
+h2{
+    
+             color:var(--color-principal);
+
+    font-size:45px;
+   
+
+    margin-top:39px;
+
+    text-shadow:
+    0 0 8px var(--color-principal),
+    0 0 18px var(--color-principal),
+    0 0 35px var(--color-principal);
+    
+
+}
+.contenedor{
+  width: 90%;
+    max-width: 1230px;
+
+    margin: 50px auto;
+
+    padding: 50px;
+
+    background: rgba(10, 10, 10, 0.90);
+
+    border-radius: 30px;
+}
+.targeta{
+    width: 100%;
+    text-align: center
+        
+}
+.targeta .imagen{
+    width: 100%;
+        height: 400px;
+    object-fit: cover;
+
+}
+.imagen{
+
+    width:100%;
+
+    height:270px;
+
+    background:var(--gris);
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    border:2px solid transparent;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.imagen img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+
+/*========================================
+            EFECTO HOVER
+========================================*/
+
+.imagen:hover{
+
+    transform:translateY(-8px);
+
+    border:2px solid var(--color-principal);
+
+    box-shadow:
+
+    0 0 12px var(--color-principal),
+
+    0 0 25px var(--color-principal),
+
+    0 0 45px var(--color-principal);
+
+}
+
+.imagen:hover img{
+
+    transform:scale(1.08);
+
+}
+.contenedor{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:30px;
+
+}
+
+
+/*========================================
+                TARJETAS
+========================================*/
+
+.tarjeta{
+
+    text-align:center;
+
+}
+
+ p{
+    color:white
+}
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--color-principal);
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--color-secundario);
+
+}
+
+
+.paginacion{
+   width: 191px;
+       height: 30px;
+    align-items: center;
+    display: flex;
+          justify-content: space-between;
+              gap :10px;
+                
+                       margin: 0 auto;
+                          
+}
+.boton{
+
+      border-radius: 3px 3px 3px 3px ;
+    padding: 13px;
+    margin-bottom: 61px
+    
+    
+
+    
+
+      
+}
+.paginacion a{
+  color: white;
+   text-shadow:
+    0 0 8px var(--color-principal),
+    0 0 18px var(--color-principal),
+    0 0 35px var(--color-principal);
+}
+.boton:hover{
+  
+   box-shadow:
+    0 0 8px var(--color-principal),
+    0 0 18px var(--color-principal),
+    0 0 35px var(--color-principal);
+}
     
     
     
