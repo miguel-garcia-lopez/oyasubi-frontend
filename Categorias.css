@@ -102,7 +102,7 @@ body{
 }
 h2{
     color:var(  --color-principal);
-        font-size: 45px;
+        font-size: 52px;
     margin-top: 39px;
     text-shadow: 
         0 0 8px var(--color-principal),
@@ -110,14 +110,14 @@ h2{
         0 0  35px var(--color-principal);
 }
 .contenedor{
-    margin-top: 56px;
-    width: 106px;
-    height: 156px;
+    
+    margin:50px;
+    height: 468px;
            background: rgba(10, 10, 10, 0.90);
-      max-width: 1230px;
-    
-    
-    
+      max-width: 1230px;  
+}
+.categorias{
+    display: flex
     
     
 }
