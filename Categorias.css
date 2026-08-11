@@ -15,6 +15,34 @@
     --gris:#1d1d1d;
     --blanco:#ffffff;
 }
+::-webkit-scrollbar{
+
+    width:10px;
+   
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--color-principal);
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--color-secundario);
+
+}
+
+
 header{
     width: 100%;
     height: 70px;
@@ -102,7 +130,7 @@ body{
 }
 h2{
     color:var(  --color-principal);
-        font-size: 52px;
+        font-size: 72px;
     margin-top: 39px;
     text-shadow: 
         0 0 8px var(--color-principal),
@@ -110,14 +138,125 @@ h2{
         0 0  35px var(--color-principal);
 }
 .contenedor{
-    
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    grid-template-rows: 150px 150px ;
     margin:50px;
     height: 468px;
            background: rgba(10, 10, 10, 0.90);
-      max-width: 1230px;  
+      max-width: 1230px; 
+   
+    
 }
-.categorias{
-    display: flex
+
+    .shonen {
+    grid-column: 3;
+    grid-row: 1;
+        align-content: center;
+        margin: auto;
+        
+        
+        
+           
+}
+
+   
+.romance{
+       grid-column: 1;
+    grid-row: 3;
+        align-content: center;
+        margin: auto;
+     
+        
+      
+   
+           
+                 
+        
+      
+            
     
     
 }
+.fantasia{
+    
+         grid-column: 3;
+    grid-row: 3;
+        align-content: center;
+        margin: auto;
+
+  
+        
+        
+           
+            
+    
+}
+.terror{
+    grid-column: 1;
+    grid-row: 1;
+        align-content: center;
+        margin: auto;
+  
+            
+    
+}
+.issekai{
+     grid-column: 2;
+    grid-row: 2;
+        align-content: center;
+        margin: auto;
+  
+    
+        
+           
+    
+    
+}
+.contenedor a{
+    
+    font-size: 41px;
+         
+ 
+}
+.shonen:hover{
+   
+       text-shadow: 
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0  35px var(--color-principal);
+    
+}
+.fantasia:hover{
+   
+       text-shadow: 
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0  35px var(--color-principal);
+    
+}
+.romance:hover{
+   
+       text-shadow: 
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0  35px var(--color-principal);
+    
+}
+.issekai:hover{
+   
+       text-shadow: 
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0  35px var(--color-principal);
+    
+}
+.terror:hover{
+   
+       text-shadow: 
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0  35px var(--color-principal);
+    
+}
+
