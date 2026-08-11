@@ -48,10 +48,10 @@ header{
     height: 70px;
     background: #000;
 }
-nav  {
+nav {
 display: flex;
-    justify-content: space-between;
-        margin:auto;
+
+       
     gap:35px;
           
 }
@@ -68,16 +68,19 @@ display: flex;
              list-style:none;
     gap:35px;
     color: white;
+  
        
 }
 a{
-     gap:35px;
+    
     color: white;
          font-size:18px;
      text-decoration: none;
    
     
 }
+
+
 .buscador{
     display: flex;
     align-items: center;
@@ -143,8 +146,11 @@ h2{
     grid-template-rows: 150px 150px ;
     margin:50px;
     height: 468px;
-           background: rgba(10, 10, 10, 0.90);
+           background:rgba(15,15,15,0.75);
       max-width: 1230px; 
+    border-radius:20px;
+     backdrop-filter:blur(3px);
+
    
     
 }
