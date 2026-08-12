@@ -1,268 +1,187 @@
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-    
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-:root{
-
-    --color-principal:#ff2d95;
-    --color-secundario:#ff6bc1;
-    --fondo:#0a0a0a;
-    --gris:#1d1d1d;
-    --blanco:#ffffff;
+:root {
+    --color-principal: #ff2d95;
+    --color-secundario: #ff6bc1;
+    --fondo: #0a0a0a;
+    --gris: #1d1d1d;
+    --blanco: #ffffff;
 }
-::-webkit-scrollbar{
-
-    width:10px;
-   
-
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-::-webkit-scrollbar-track{
-
-    background:#111;
-
+::-webkit-scrollbar-track {
+    background: #111;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
+    background: var(--color-principal);
 
-    background:var(--color-principal);
-
-    border-radius:10px;
-
+    border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-
-    background:var(--color-secundario);
-
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secundario);
 }
 
-
-header{
+header {
     width: 100%;
     height: 70px;
     background: #000;
 }
 nav {
-display: flex;
+    display: flex;
 
-       
-    gap:35px;
-          
+    gap: 35px;
 }
-.logo{
+.logo {
     height: 151px;
-        margin-top: -34px
-    
+    margin-top: -34px;
 }
-ul{
-display: flex;
+ul {
+    display: flex;
     justify-content: space-between;
-        margin:auto;
-        margin-top: 27px;
-             list-style:none;
-    gap:35px;
+    margin: auto;
+    margin-top: 27px;
+    list-style: none;
+    gap: 35px;
     color: white;
-  
-       
 }
-a{
-    
+a {
     color: white;
-         font-size:18px;
-     text-decoration: none;
-   
-    
+    font-size: 18px;
+    text-decoration: none;
 }
 
-
-.buscador{
+.buscador {
     display: flex;
     align-items: center;
-          justify-content: space-between; 
-    margin-top: -44px
-     
+    justify-content: space-between;
+    margin-top: -44px;
 }
-nav ul li a:hover{
-    
-    color:var(  --color-principal);
-  text-shadow: 
-  0 0 8px var(--color-principal),
-
-    0 0 18px var(--color-principal),
-
-    0 0 30px var(--color-principal);
-   
- 
-
+nav ul li a:hover {
+    color: var(--color-principal);
+    text-shadow:
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0 30px var(--color-principal);
 }
-.buscador input{
+.buscador input {
     width: 240px;
-        height: 40px;
-    border:none;
-        outline: none;
+    height: 40px;
+    border: none;
+    outline: none;
     padding-left: 16px;
     border-radius: 8px 0 0 8px;
-         font-size:16px;   
-    margin:0;
-        
+    font-size: 16px;
+    margin: 0;
 }
-.buscador button{
+.buscador button {
     width: 45px;
-    height: 40px;   
+    height: 40px;
     box-shadow:
-    0 0 10px var(--color-principal),
-    0 0 10px var(--color-principal),
-     0 0 10px var(--color-principal);
+        0 0 10px var(--color-principal),
+        0 0 10px var(--color-principal),
+        0 0 10px var(--color-principal);
     color: white;
-    background:var(--color-principal)
-    }
-.buscador button:hover{
-    box-shadow: 
+    background: var(--color-principal);
+}
+.buscador button:hover {
+    box-shadow:
         0 0 20px var(--color-principal),
-    0 0 35px var(--color-principal);
+        0 0 35px var(--color-principal);
 }
 
-body{
-  background-image:url("imagenes2.0/estrellas2.0.png"); 
+body {
+    background-image: url("imagenes2.0/estrellas2.0.png");
 }
-h2{
-    color:var(  --color-principal);
-        font-size: 72px;
+h2 {
+    color: var(--color-principal);
+    font-size: 72px;
     margin-top: 39px;
-    text-shadow: 
+    text-shadow:
         0 0 8px var(--color-principal),
         0 0 18px var(--color-principal),
-        0 0  35px var(--color-principal);
+        0 0 35px var(--color-principal);
 }
-.contenedor{
+.contenedor {
     display: grid;
-    grid-template-columns: 1fr  1fr 1fr;
-    grid-template-rows: 150px 150px ;
-    margin:50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    margin: 50px;
     height: 468px;
-           background:rgba(15,15,15,0.75);
-      max-width: 1230px; 
-    border-radius:20px;
-     backdrop-filter:blur(3px);
-
-   
-    
+    background: rgba(15, 15, 15, 0.75);
+    max-width: 1230px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
 }
 
-    .shonen {
+.shonen {
     grid-column: 3;
     grid-row: 1;
-        align-content: center;
-        margin: auto;
-        
-        
-        
-           
+    align-content: center;
+    margin: auto;
 }
 
-   
-.romance{
-       grid-column: 1;
+.romance {
+    grid-column: 1;
     grid-row: 3;
-        align-content: center;
-        margin: auto;
-     
-        
-      
-   
-           
-                 
-        
-      
-            
-    
-    
+    align-content: center;
+    margin: auto;
 }
-.fantasia{
-    
-         grid-column: 3;
+.fantasia {
+    grid-column: 3;
     grid-row: 3;
-        align-content: center;
-        margin: auto;
-
-  
-        
-        
-           
-            
-    
+    align-content: center;
+    margin: auto;
 }
-.terror{
+.terror {
     grid-column: 1;
     grid-row: 1;
-        align-content: center;
-        margin: auto;
-  
-            
-    
+    align-content: center;
+    margin: auto;
 }
-.issekai{
-     grid-column: 2;
+.issekai {
+    grid-column: 2;
     grid-row: 2;
-        align-content: center;
-        margin: auto;
-  
-    
-        
-           
-    
-    
+    align-content: center;
+    margin: auto;
 }
-.contenedor a{
-    
+.contenedor a {
     font-size: 41px;
-         
- 
 }
-.shonen:hover{
-   
-       text-shadow: 
+.shonen:hover {
+    text-shadow:
         0 0 8px var(--color-principal),
         0 0 18px var(--color-principal),
-        0 0  35px var(--color-principal);
-    
+        0 0 35px var(--color-principal);
 }
-.fantasia:hover{
-   
-       text-shadow: 
+.fantasia:hover {
+    text-shadow:
         0 0 8px var(--color-principal),
         0 0 18px var(--color-principal),
-        0 0  35px var(--color-principal);
-    
+        0 0 35px var(--color-principal);
 }
-.romance:hover{
-   
-       text-shadow: 
+.romance:hover {
+    text-shadow:
         0 0 8px var(--color-principal),
         0 0 18px var(--color-principal),
-        0 0  35px var(--color-principal);
-    
+        0 0 35px var(--color-principal);
 }
-.issekai:hover{
-   
-       text-shadow: 
+.issekai:hover {
+    text-shadow:
         0 0 8px var(--color-principal),
         0 0 18px var(--color-principal),
-        0 0  35px var(--color-principal);
-    
+        0 0 35px var(--color-principal);
 }
-.terror:hover{
-   
-       text-shadow: 
+.terror:hover {
+    text-shadow:
         0 0 8px var(--color-principal),
         0 0 18px var(--color-principal),
-        0 0  35px var(--color-principal);
-    
+        0 0 35px var(--color-principal);
 }
-
