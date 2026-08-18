@@ -102,22 +102,7 @@ nav ul li a:hover{
 body{
   background-image:url("/Proyecto5.0/imagenes2.0/estrellas2.0.png"); 
 }
-h2{
-    
-             color:var(--color-principal);
 
-    font-size:45px;
-   
-
-    margin-top:39px;
-
-    text-shadow:
-    0 0 8px var(--color-principal),
-    0 0 18px var(--color-principal),
-    0 0 35px var(--color-principal);
-    
-
-}
 .contenedor{
     width: 100%;
       background-image:url("https://media.themoviedb.org/t/p/w1066_and_h600_face/2UG177tWHy7xRmMKWJHB7nAUmKd.jpg"); 
@@ -132,37 +117,50 @@ h2{
     /* 3. Centra la imagen para que no se corte solo de un lado */
     background-position: center;
     
-}
+}  
 
-iframe{
-    width: 481px;
-    height: 328px;
-    position: absolute;
-    right: 79px;
-    bottom: 8px;
-        padding:3px;
-    
-        
-    
-}
   h3{
-    height: 9px;
-    width: auto;
+    height: 10px;
+  padding-left: 255px ;
+       
     color: white;
         background-color: #1d1d1d;
 }
-                       
-      
-      
+
 
 .trailer{
+    width: 481px;
+    height: 328px;
     position: absolute;
-    right: 215px;
-    bottom: 3px;
-        background-color: #0a0a0a;
-    width: 3px
+    right: 145px;
+    bottom: 8px;
+    margin: 0
         
+    
             
 }
-      
+.subtitulo{
+ background-color: #1d1d1d;
+     width: 117%;
+    height: 32px;
         
+    
+}
+img{
+    height: 69px;
+}
+.boton{
+position: absolute;
+    bottom: 12px;
+        left: 70px
+      }
+h2{
+   
+    position: absolute ;
+        left:56px;
+            bottom: 477px;
+    font-size: 33px;
+        color: white
+}
+
+
