@@ -2,1061 +2,809 @@
             CONFIGURACIÓN GENERAL
 ========================================*/
 
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-
-    --color-principal:#ff2d95;
-    --color-secundario:#ff6bc1;
-    --fondo:#0a0a0a;
-    --gris:#1d1d1d;
-    --blanco:#ffffff;
-
+:root {
+    --color-principal: #ff2d95;
+    --color-secundario: #ff6bc1;
+    --fondo: #0a0a0a;
+    --gris: #1d1d1d;
+    --blanco: #ffffff;
 }
 
-body{
+body {
+    background: var(--fondo);
 
-    background:var(--fondo);
+    color: var(--blanco);
 
-    color:var(--blanco);
+    background-repeat: repeat;
 
+    background-size: 500px;
 
-
-    background-repeat:no repeat;
-
-    background-size:500px;
-
-    background-attachment:fixed;
-      background-image:url("/Proyecto5.0/imagenes2.0/estrellas2.0.png");
-
+    background-attachment: fixed;
+    background-image: url("/Proyecto5.0/imagenes2.0/estrellas2.0.png");
 }
-
 
 /*========================================
         BARRA DE NAVEGACIÓN
 ========================================*/
 
-header{
+header {
+    width: 100%;
 
-    width:100%;
+    height: 70px;
 
-    height:70px;
+    background: #000;
 
-    background:#000;
+    position: sticky;
 
-    position:sticky;
+    top: 0;
 
-    top:0;
-
-    z-index:1000;
-
+    z-index: 1000;
 }
 
-nav{
+nav {
+    width: 4%;
 
-    width:4%;
+    height: 100%;
 
-    height:100%;
+    margin: auto;
 
-    margin:auto;
+    display: flex;
 
-    display:flex;
+    justify-content: space-between;
 
-    justify-content:space-between;
-
-    align-items:center;
-
+    align-items: center;
 }
 
-nav ul{
+nav ul {
+    display: flex;
 
-    display:flex;
+    list-style: none;
 
-    list-style:none;
-
-    gap:35px;
-
+    gap: 35px;
 }
 
-nav ul li a{
+nav ul li a {
+    text-decoration: none;
 
-    text-decoration:none;
+    color: white;
 
-    color:white;
+    font-size: 18px;
 
-    font-size:18px;
-
-    transition:.3s;
-
+    transition: 0.3s;
 }
 
-nav ul li a i{
-
-    margin-right:8px;
-
+nav ul li a i {
+    margin-right: 8px;
 }
 
-nav ul li a:hover{
-
-    color:var(--color-principal);
+nav ul li a:hover {
+    color: var(--color-principal);
 
     text-shadow:
-
-    0 0 8px var(--color-principal),
-
-    0 0 18px var(--color-principal),
-
-    0 0 30px var(--color-principal);
-
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0 30px var(--color-principal);
 }
-
 
 /*========================================
                 BUSCADOR
 ========================================*/
 
-.buscar{
+.buscar {
+    display: flex;
 
-    display:flex;
-
-    align-items:center;
-
+    align-items: center;
 }
 
-.buscar input{
+.buscar input {
+    width: 240px;
 
-    width:240px;
+    height: 40px;
 
-    height:40px;
+    border: none;
 
-    border:none;
+    outline: none;
 
-    outline:none;
+    padding-left: 16px;
 
-    padding-left:16px;
+    border-radius: 8px 0 0 8px;
 
-    border-radius:8px 0 0 8px;
-
-    font-size:16px;
-
+    font-size: 16px;
 }
 
-.buscar button{
+.buscar button {
+    width: 45px;
 
-    width:45px;
+    height: 40px;
 
-    height:40px;
+    border: none;
 
-    border:none;
+    cursor: pointer;
 
-    cursor:pointer;
+    background: var(--color-principal);
 
-    background:var(--color-principal);
+    color: white;
 
-    color:white;
+    border-radius: 0 8px 8px 0;
 
-    border-radius:0 8px 8px 0;
-
-    transition:.3s;
+    transition: 0.3s;
 
     box-shadow:
-
-    0 0 10px var(--color-principal),
-
-    0 0 20px var(--color-principal);
-
+        0 0 10px var(--color-principal),
+        0 0 20px var(--color-principal);
 }
 
-.buscar button:hover{
-
+.buscar button:hover {
     box-shadow:
-
-    0 0 20px var(--color-principal),
-
-    0 0 35px var(--color-principal);
-
+        0 0 20px var(--color-principal),
+        0 0 35px var(--color-principal);
 }
-
 
 /*========================================
                 BANNER
 ========================================*/
 
-.banner{
+.banner {
+    width: 100%;
+    height: 450px;
 
- 
+    background-image: url("/Proyecto5.0/imagenes2.0/estrellas2.0.png");
+    background-size: cover;
+    background-position: center;
 
-   
-    
-    width:100%;
-    height:450px;
+    background-attachment: fixed;
 
-    background-image:url("/Proyecto5.0/imagenes2.0/estrellas2.0.png");
-    background-size:cover;
-    background-position:center;
-
-    background-attachment:fixed;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo{
+.logo {
+    width: 700px;
 
-    width:700px;
-
-    height:auto;
-
-}/*========================================
+    height: auto;
+} /*========================================
               POPULARES
 ========================================*/
 
-.populares{
+.populares {
+    width: 90%;
 
-    width:90%;
+    margin: 60px auto;
 
-    margin:60px auto;
+    padding: 40px;
 
-    padding:40px;
+    background: rgba(15, 15, 15, 0.75);
 
-    background:rgba(15,15,15,0.75);
+    border-radius: 20px;
 
-    border-radius:20px;
-
-    backdrop-filter:blur(3px);
-
+    backdrop-filter: blur(3px);
 }
 
-h2{
+h2 {
+    color: var(--color-principal);
 
-    color:var(--color-principal);
+    font-size: 40px;
 
-    font-size:40px;
-
-    margin-bottom:40px;
+    margin-bottom: 40px;
 
     text-shadow:
-    0 0 8px var(--color-principal),
-    0 0 18px var(--color-principal),
-    0 0 35px var(--color-principal);
-
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0 35px var(--color-principal);
 }
 
-.contenedor-populares{
+.contenedor-populares {
+    display: grid;
 
-    display:grid;
+    grid-template-columns: repeat(5, 1fr);
 
-    grid-template-columns:repeat(5,1fr);
-
-    gap:30px;
-
+    gap: 30px;
 }
-
-
 
 /*========================================
               VER ANIME
 ========================================*/
 
-.animes{
+.animes {
+    width: 90%;
 
-    width:90%;
+    margin: 60px auto;
 
-    margin:60px auto;
+    padding: 40px;
 
-    padding:40px;
+    background: rgba(15, 15, 15, 0.75);
 
-    background:rgba(15,15,15,0.75);
+    border-radius: 20px;
 
-    border-radius:20px;
-
-    backdrop-filter:blur(3px);
-
+    backdrop-filter: blur(3px);
 }
 
-.animes h2{
+.animes h2 {
+    color: var(--color-principal);
 
-    color:var(--color-principal);
+    font-size: 40px;
 
-    font-size:40px;
-
-    margin-bottom:40px;
+    margin-bottom: 40px;
 
     text-shadow:
-    0 0 8px var(--color-principal),
-    0 0 18px var(--color-principal),
-    0 0 35px var(--color-principal);
-
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0 35px var(--color-principal);
 }
 
-.contenedor{
+.contenedor {
+    display: grid;
 
-    display:grid;
+    grid-template-columns: repeat(5, 1fr);
 
-    grid-template-columns:repeat(5,1fr);
-
-    gap:30px;
-
+    gap: 30px;
 }
 
-.boton-todas{
+.boton-todas {
+    width: 100%;
 
-    width:100%;
+    display: flex;
 
-    display:flex;
+    justify-content: flex-end;
 
-    justify-content:flex-end;
-
-    margin-top:40px;
-
+    margin-top: 40px;
 }
 
-.boton-todas a{
+.boton-todas a {
+    text-decoration: none;
 
-    text-decoration:none;
+    background: var(--color-principal);
 
-    background:var(--color-principal);
+    color: white;
 
-    color:white;
+    font-size: 18px;
 
-    font-size:18px;
+    font-weight: bold;
 
-    font-weight:bold;
+    padding: 14px 35px;
 
-    padding:14px 35px;
+    border-radius: 12px;
 
-    border-radius:12px;
-
-    transition:.3s;
+    transition: 0.3s;
 
     box-shadow:
-
-    0 0 12px var(--color-principal),
-
-    0 0 25px var(--color-principal),
-
-    0 0 40px var(--color-principal);
-
+        0 0 12px var(--color-principal),
+        0 0 25px var(--color-principal),
+        0 0 40px var(--color-principal);
 }
 
-.boton-todas a:hover{
-
-    transform:scale(1.08);
+.boton-todas a:hover {
+    transform: scale(1.08);
 
     box-shadow:
-
-    0 0 20px var(--color-principal),
-
-    0 0 35px var(--color-principal),
-
-    0 0 55px var(--color-principal);
-
+        0 0 20px var(--color-principal),
+        0 0 35px var(--color-principal),
+        0 0 55px var(--color-principal);
 }
-
-
 
 /*========================================
               PELÍCULAS
 ========================================*/
 
-.peliculas{
+.peliculas {
+    width: 90%;
 
-    width:90%;
+    margin: 60px auto;
 
-    margin:60px auto;
+    padding: 40px;
 
-    padding:40px;
+    background: rgba(15, 15, 15, 0.75);
 
-    background:rgba(15,15,15,0.75);
+    border-radius: 20px;
 
-    border-radius:20px;
-
-    backdrop-filter:blur(3px);
-
+    backdrop-filter: blur(3px);
 }
 
-.peliculas h2{
+.peliculas h2 {
+    color: var(--color-principal);
 
-    color:var(--color-principal);
+    font-size: 40px;
 
-    font-size:40px;
-
-    margin-bottom:40px;
+    margin-bottom: 40px;
 
     text-shadow:
-    0 0 8px var(--color-principal),
-    0 0 18px var(--color-principal),
-    0 0 35px var(--color-principal);
-
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0 35px var(--color-principal);
 }
 
-.contenedor-peliculas{
+.contenedor-peliculas {
+    display: grid;
 
-    display:grid;
+    grid-template-columns: repeat(5, 1fr);
 
-    grid-template-columns:repeat(5,1fr);
-
-    gap:30px;
-
-}/*========================================
+    gap: 30px;
+} /*========================================
                 TARJETAS
 ========================================*/
 
-.tarjeta{
-
-    text-align:center;
-
+.tarjeta {
+    text-align: center;
 }
 
-.imagen{
+.imagen {
+    width: 100%;
 
-    width:100%;
+    height: 260px;
 
-    height:260px;
+    background: var(--gris);
 
-    background:var(--gris);
+    border-radius: 15px;
 
-    border-radius:15px;
+    overflow: hidden;
 
-    overflow:hidden;
+    cursor: pointer;
 
-    cursor:pointer;
+    border: 2px solid transparent;
 
-    border:2px solid transparent;
-
-    transition:all .35s ease;
-
+    transition: all 0.35s ease;
 }
 
-.imagen img{
+.imagen img {
+    width: 100%;
 
-    width:100%;
+    height: 100%;
 
-    height:100%;
+    object-fit: cover;
 
-    object-fit:cover;
+    display: block;
 
-    display:block;
-
-    transition:.35s;
-
+    transition: 0.35s;
 }
 
-.imagen:hover{
+.imagen:hover {
+    transform: scale(1.05);
 
-    transform:scale(1.05);
-
-    border:2px solid var(--color-principal);
+    border: 2px solid var(--color-principal);
 
     box-shadow:
-
-    0 0 10px var(--color-principal),
-
-    0 0 20px var(--color-principal),
-
-    0 0 40px var(--color-principal);
-
+        0 0 10px var(--color-principal),
+        0 0 20px var(--color-principal),
+        0 0 40px var(--color-principal);
 }
 
-.imagen:hover img{
-
-    transform:scale(1.08);
-
+.imagen:hover img {
+    transform: scale(1.08);
 }
 
-.tarjeta p{
+.tarjeta p {
+    margin-top: 12px;
 
-    margin-top:12px;
+    color: white;
 
-    color:white;
+    font-size: 18px;
 
-    font-size:18px;
-
-    transition:.3s;
-
+    transition: 0.3s;
 }
 
-.tarjeta:hover p{
-
-    color:var(--color-principal);
+.tarjeta:hover p {
+    color: var(--color-principal);
 
     text-shadow:
-
-    0 0 8px var(--color-principal),
-
-    0 0 18px var(--color-principal);
-
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal);
 }
-
 
 /*========================================
             SCROLL PERSONALIZADO
 ========================================*/
 
-::-webkit-scrollbar{
-
-    width:10px;
-
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-::-webkit-scrollbar-track{
-
-    background:#111;
-
+::-webkit-scrollbar-track {
+    background: #111;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
+    background: var(--color-principal);
 
-    background:var(--color-principal);
-
-    border-radius:10px;
-
+    border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-
-    background:var(--color-secundario);
-
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secundario);
 }
-
 
 /*========================================
                 ANIMACIONES
 ========================================*/
 
-@keyframes brillo{
-
-    0%{
-
-        text-shadow:
-
-        0 0 5px var(--color-principal);
-
+@keyframes brillo {
+    0% {
+        text-shadow: 0 0 5px var(--color-principal);
     }
 
-    50%{
-
+    50% {
         text-shadow:
-
-        0 0 15px var(--color-principal),
-
-        0 0 30px var(--color-principal);
-
+            0 0 15px var(--color-principal),
+            0 0 30px var(--color-principal);
     }
 
-    100%{
-
-        text-shadow:
-
-        0 0 5px var(--color-principal);
-
+    100% {
+        text-shadow: 0 0 5px var(--color-principal);
     }
-
 }
 
 .populares h2,
 .animes h2,
-.peliculas h2{
-
-    animation:brillo 2.5s infinite;
-
+.peliculas h2 {
+    animation: brillo 2.5s infinite;
 }
-
 
 /*========================================
           RESPONSIVE TABLET
 ========================================*/
 
-@media(max-width:1200px){
-
+@media (max-width: 1200px) {
     .contenedor,
     .contenedor-populares,
-    .contenedor-peliculas{
-
-        grid-template-columns:repeat(4,1fr);
-
+    .contenedor-peliculas {
+        grid-template-columns: repeat(4, 1fr);
     }
-
 }
-
 
 /*========================================
           RESPONSIVE MÓVIL
 ========================================*/
 
-@media(max-width:900px){
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
 
-    nav{
+        height: auto;
 
-        flex-direction:column;
-
-        height:auto;
-
-        padding:20px 0;
-          margin: 0;
-    
-
+        padding: 20px 0;
+        margin: 0;
     }
 
-    nav ul{
+    nav ul {
+        flex-wrap: wrap;
 
-        flex-wrap:wrap;
+        justify-content: center;
 
-        justify-content:center;
-
-        margin-bottom:20px;
-
+        margin-bottom: 20px;
     }
 
-    .buscar{
+    .buscar {
+        width: 100%;
 
-        width:100%;
-
-        justify-content:center;
-
+        justify-content: center;
     }
 
-    .buscar input{
-
-        width:260px;
-
+    .buscar input {
+        width: 260px;
     }
 
-    .logo{
-
-        width:90%;
-
+    .logo {
+        width: 90%;
     }
 
     .contenedor,
     .contenedor-populares,
-    .contenedor-peliculas{
-
-        grid-template-columns:repeat(2,1fr);
-
+    .contenedor-peliculas {
+        grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
-
-@media(max-width:600px){
-
+@media (max-width: 600px) {
     .contenedor,
     .contenedor-populares,
-    .contenedor-peliculas{
-
-        grid-template-columns:1fr;
-
+    .contenedor-peliculas {
+        grid-template-columns: 1fr;
     }
 
     .populares h2,
     .animes h2,
-    .peliculas h2{
-
-        font-size:30px;
-
+    .peliculas h2 {
+        font-size: 30px;
     }
-  
 
-/*========================================
+    /*========================================
               PAISAJE FINAL
 ========================================*/
-
-
-
 }
 
 .fondo-final {
     width: 100%;
     height: 600px;
 
-    background-image: url("imagenes2.0/footer2.0.png");
+    background-image: url("/Proyecto5.0/imagenes2.0/footer2.0.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-  margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 
 /*========================================
             CONFIGURACIÓN GENERAL
 ========================================*/
 
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-
-    --color-principal:#ff2d95;
-    --color-secundario:#ff6bc1;
-    --fondo:#090909;
-    --gris:#1b1b1b;
-    --blanco:#ffffff;
-
+:root {
+    --color-principal: #ff2d95;
+    --color-secundario: #ff6bc1;
+    --fondo: #090909;
+    --gris: #1b1b1b;
+    --blanco: #ffffff;
 }
 
-html{
-
-    scroll-behavior:smooth;
-
+html {
+    scroll-behavior: smooth;
 }
 
-body{
+body {
+    background: var(--fondo);
+    color: var(--blanco);
 
-    background:var(--fondo);
-    color:var(--blanco);
-
-    background-image:url("imagenes2.0/estrellas2.0.png");
-    background-repeat:repeat;
-    background-size:500px;
-    background-attachment:fixed;
-
+    background-image: url("imagenes2.0/estrellas2.0.png");
+    background-repeat: repeat;
+    background-size: 500px;
+    background-attachment: fixed;
 }
-
 
 /*========================================
             BARRA SUPERIOR
 ========================================*/
 
-header{
+header {
+    width: 100%;
+    height: 70px;
 
-    width:100%;
-    height:70px;
+    background: #000;
 
-    background:#000;
-
-    position:sticky;
-    top:0;
-    z-index:1000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
     box-shadow:
-    0 0 10px #000,
-    0 0 20px #000;
-
+        0 0 10px #000,
+        0 0 20px #000;
 }
 
-nav{
+nav {
+    width: 90%;
+    height: 100%;
 
-    width:90%;
-    height:100%;
+    margin: auto;
 
-    margin:auto;
+    display: flex;
 
-    display:flex;
+    justify-content: space-between;
 
-    justify-content:space-between;
-
-    align-items:center;
-
+    align-items: center;
 }
 
-nav ul{
+nav ul {
+    list-style: none;
 
-    list-style:none;
-
-    display:flex
+    display: flex;
 }
-        /*========================================
+/*========================================
                 CONTENEDORES
 ========================================*/
 
-.contenedor{
+.contenedor {
+    display: grid;
 
-    display:grid;
+    grid-template-columns: repeat(5, 1fr);
 
-    grid-template-columns:repeat(5,1fr);
-
-    gap:30px;
-
+    gap: 30px;
 }
-
 
 /*========================================
                 TARJETAS
 ========================================*/
 
-.tarjeta{
-
-    text-align:center;
-
+.tarjeta {
+    text-align: center;
 }
 
-.imagen{
+.imagen {
+    width: 100%;
 
-    width:100%;
+    height: 270px;
 
-    height:270px;
+    background: var(--gris);
 
-    background:var(--gris);
+    border-radius: 16px;
 
-    border-radius:16px;
+    overflow: hidden;
 
-    overflow:hidden;
+    border: 2px solid transparent;
 
-    border:2px solid transparent;
+    cursor: pointer;
 
-    cursor:pointer;
-
-    transition:.35s;
-    
-
+    transition: 0.35s;
 }
 
-.imagen img{
+.imagen img {
+    width: 100%;
 
-    width:100%;
+    height: 100%;
 
-    height:100%;
+    object-fit: cover;
 
-    object-fit:cover;
+    display: block;
 
-    display:block;
-
-    transition:.35s;
-
+    transition: 0.35s;
 }
-
 
 /*========================================
             EFECTO HOVER
 ========================================*/
 
-.imagen:hover{
+.imagen:hover {
+    transform: translateY(-8px);
 
-    transform:translateY(-8px);
-
-    border:2px solid var(--color-principal);
+    border: 2px solid var(--color-principal);
 
     box-shadow:
-
-    0 0 12px var(--color-principal),
-
-    0 0 25px var(--color-principal),
-
-    0 0 45px var(--color-principal);
-
+        0 0 12px var(--color-principal),
+        0 0 25px var(--color-principal),
+        0 0 45px var(--color-principal);
 }
 
-.imagen:hover img{
-
-    transform:scale(1.08);
-
+.imagen:hover img {
+    transform: scale(1.08);
 }
 
-.tarjeta p{
+.tarjeta p {
+    margin-top: 14px;
 
-    margin-top:14px;
+    font-size: 18px;
 
-    font-size:18px;
+    color: white;
 
-    color:white;
-
-    transition:.35s;
-
+    transition: 0.35s;
 }
 
-.tarjeta:hover p{
-
-    color:var(--color-principal);
+.tarjeta:hover p {
+    color: var(--color-principal);
 
     text-shadow:
-
-    0 0 8px var(--color-principal),
-
-    0 0 18px var(--color-principal),
-
-    0 0 28px var(--color-principal);
-
+        0 0 8px var(--color-principal),
+        0 0 18px var(--color-principal),
+        0 0 28px var(--color-principal);
 }
-
 
 /*========================================
             ANIMACIÓN ENTRADA
 ========================================*/
 
-@keyframes aparecer{
+@keyframes aparecer {
+    from {
+        opacity: 0;
 
-    from{
-
-        opacity:0;
-
-        transform:translateY(25px);
-
+        transform: translateY(25px);
     }
 
-    to{
+    to {
+        opacity: 1;
 
-        opacity:1;
-
-        transform:translateY(0);
-
+        transform: translateY(0);
     }
-
-
 }
-.tarjeta{
-
-    animation:aparecer .8s ease;
-
+.tarjeta {
+    animation: aparecer 0.8s ease;
 }
-
 
 /*========================================
             TITULOS BRILLO
 ========================================*/
 
-@keyframes brillo{
-
-    0%{
-
-        text-shadow:
-
-        0 0 6px var(--color-principal);
-
+@keyframes brillo {
+    0% {
+        text-shadow: 0 0 6px var(--color-principal);
     }
 
-    50%{
-
+    50% {
         text-shadow:
-
-        0 0 18px var(--color-principal),
-
-        0 0 35px var(--color-principal),
-
-        0 0 55px var(--color-principal);
-
+            0 0 18px var(--color-principal),
+            0 0 35px var(--color-principal),
+            0 0 55px var(--color-principal);
     }
 
-    100%{
-
-        text-shadow:
-
-        0 0 6px var(--color-principal);
-
+    100% {
+        text-shadow: 0 0 6px var(--color-principal);
     }
-
 }
 
-.categoria h2{
-
-    animation:brillo 2.8s infinite;
-
+.categoria h2 {
+    animation: brillo 2.8s infinite;
 }
-
 
 /*========================================
             SEPARACIÓN
 ========================================*/
 
-.categoria:not(:last-child){
-
-    margin-bottom:80px;
-
-}/*========================================
+.categoria:not(:last-child) {
+    margin-bottom: 80px;
+} /*========================================
             PAGINACIÓN
 ========================================*/
 
-.paginacion{
+.paginacion {
+    width: 100%;
 
-    width:100%;
+    display: flex;
 
-    display:flex;
+    justify-content: center;
 
-    justify-content:center;
+    align-items: center;
 
-    align-items:center;
+    gap: 15px;
 
-    gap:15px;
-
-    margin:70px 0 30px;
-
+    margin: 70px 0 30px;
 }
 
-.pagina{
+.pagina {
+    width: 51px;
 
-    width:51px;
+    height: 50px;
 
-    height:50px;
+    border: none;
 
-    border:none;
+    border-radius: 12px;
 
-    border-radius:12px;
+    cursor: pointer;
 
-    cursor:pointer;
+    background: #1c1c1c;
 
-    background:#1c1c1c;
+    color: white;
 
-    color:white;
+    font-size: 18px;
 
-    font-size:18px;
+    font-weight: bold;
 
-    font-weight:bold;
-
-    transition:.35s;
-
+    transition: 0.35s;
 }
 
-.pagina:hover{
-
-    background:var(--color-principal);
+.pagina:hover {
+    background: var(--color-principal);
 
     box-shadow:
-
-    0 0 12px var(--color-principal),
-
-    0 0 25px var(--color-principal);
-
+        0 0 12px var(--color-principal),
+        0 0 25px var(--color-principal);
 }
 
-.pagina.activa{
-
-    background:var(--color-principal);
+.pagina.activa {
+    background: var(--color-principal);
 
     box-shadow:
-
-    0 0 15px var(--color-principal),
-
-    0 0 30px var(--color-principal),
-
-    0 0 45px var(--color-principal);
-
+        0 0 15px var(--color-principal),
+        0 0 30px var(--color-principal),
+        0 0 45px var(--color-principal);
 }
-
 
 /*========================================
         BOTONES ANTERIOR / SIGUIENTE
 ========================================*/
 
-.navegacion-paginas{
+.navegacion-paginas {
+    width: 90%;
 
-    width:90%;
-
-    margin:left;
-    
-
-
-
-
-
-
-
+    margin: left;
 }

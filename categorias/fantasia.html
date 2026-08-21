@@ -1,248 +1,235 @@
-<!dOCTYPE html>
+<!doctype html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
 
-<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
+        <title>Yasubi</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css" />
 
-    <title>Yasubi</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    </head>
 
-    <link rel="stylesheet" href="estilos.css">
-
-
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-</head>
-
-<body>
-    
-
- 
-    
-    <!--====================================
+    <body>
+        <!--====================================
             BARRA DE NAVEGACIÓN
     =====================================-->
 
-    <header>
-        <nav>
-            <img src="imagenes2.0/oyasubi.png" class="logo">
-            <ul>
-                <li>
-                    <a href="/Proyecto5.0/index-inicio.html">
-                        <i class="fa-solid fa-house"></i>
-                        Inicio
-                    </a>
+        <header>
+            <nav>
+                <img src="imagenes2.0/oyasubi.png" class="logo" />
+                <ul>
+                    <li>
+                        <a href="/Proyecto5.0/index-inicio.html">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Proyecto5.0/Inicio/Animes.html">
+                            <i class="fa-solid fa-film"></i>
+                            Animes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Proyecto5.0/favoritos.html">
+                            <i class="fa-regular fa-heart"></i>
+                            Favoritos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Categorias.html">
+                            <i class="fa-solid fa-layer-group"></i>
+                            Categorías
+                        </a>
+                    </li>
+                </ul>
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar..." />
+
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <h2>Fantasía</h2>
+        <section class="animes">
+            <div class="contenedor">
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/3NyQpXmkaBVWgYM8miDHEFqGMCB.jpg" />
+                    </div>
+                    <p>Frieren: Beyond Journey's End</p>
+                </div>
+
+               
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/iPJtVqLSW9dBXRsUb42SKC3Ueys.jpg" />
+                    </div>
+                    <p>Delicious in Dungeon</p>
+                </div>
+
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/n30CBH4BoN5Z34tCpOWIPGJYOaS.jpg" />
+                    </div>
+                    <p>Made in Abyss</p>
+                </div>
+
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://www.themoviedb.org/t/p/w1280/48c5cdDOHCGzhH9V1qiIgptc5ma.jpg" />
+                    </div>
+                    <p>Berserk</p>
+                </div>
+
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://www.themoviedb.org/t/p/w1280/8hMJiFNO4CmySBXgDKlg8axt5oe.jpg" />
+                    </div>
+                    <p>The Seven Deadly Sins</p>
+                </div>
+
+               
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg" />
+                    </div>
+                    <p>Black Clover</p>
+                </div>
+
+             
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://www.themoviedb.org/t/p/w1280/z31dJXQ3G5TYCtQa4h67NoOtxEO.jpg" />
+                    </div>
+                    <p>Fate/Zero</p>
+                </div>
+
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/7pL2wGmy92v31ceYvCVIg4ilwLr.jpg" />
+                    </div>
+                    <p>Noragami</p>
+                </div>
+
                 
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/vshFBPrMazfyjFNbWoRJRbnBhZg.jpg" />
+                    </div>
+                    <p>Magi: The Labyrinth of Magic</p>
+                </div>
+
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/mLSJO9lj2RMHdzHJMNMoksmwlbv.jpg" />
+                    </div>
+                    <p>Dororo</p>
+                </div>
+
+             
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/ve6wy4KrcU7Lo6WuGb5Zqru3Ds.jpg" />
+                    </div>
+                    <p>Rokka: Braves of the Six Flowers</p>
+                </div>
+
+            
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://www.themoviedb.org/t/p/w1280/Af8QiCDpFvYGh5ZVBWlAWlgaDL8.jpg" />
+                    </div>
+                    <p>Rage of Bahamut: Genesis</p>
+                </div>
+
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/xXGAFMGiG55oS8uzuVz7V5JxFb2.jpg" />
+                    </div>
+                    <p>The Ancient Magus' Bride</p>
+                </div>
+
+               
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://www.themoviedb.org/t/p/w1280/ls3QpjJAzXFPtpKIV086ve14plZ.jpg" />
+                    </div>
+                    <p>Claymore</p>
+                </div>
+
+               
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://www.themoviedb.org/t/p/w1280/dY2oCQXBGDzoeUu1GxaGynHFs1R.jpg" />
+                    </div>
+                    <p>Goblin Slayer</p>
+                </div>
+
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/pPpUEVN9229LGwvYwcHNCmX7hxJ.jpg" />
+                    </div>
+                    <p>Akame ga Kill!</p>
+                </div>
+
+              
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/5IlxL2PfQ8CyY4TLRru9TcU56b3.jpg" />
+                    </div>
+                    <p>Seraph of the End</p>
+                </div>
+
+               
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://www.themoviedb.org/t/p/w1280/lKXe7Km2lwIIjLzU4vIJxfNy8yg.jpg" />
+                    </div>
+                    <p>The Heroic Legend of Arslan</p>
+                </div>
+
                 
-                </li>
-                <li>
-                    <a href="/Proyecto5.0/Inicio/Animes.html">
-                        <i class="fa-solid fa-film"></i>
-                        Animes
-                    </a>
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img
+                            src="https://media.themoviedb.org/t/p/w600_and_h900_face/hUo1FNB9WZZZi4pOJ2YE7Vq5UcF.jpg" />
+                    </div>
+                    <p>Granblue Fantasy</p>
+                </div>
+
                 
-                
-                </li>
-                <li>
-                    <a href="/Proyecto5.0/favoritos.html">
-                      <i class="fa-regular fa-heart"></i>
-                        Favoritos
-                    </a>
-                </li>
-                 <li>
-                    <a href="Categorias.html">
-                        <i class="fa-solid fa-layer-group"></i>
-                        Categorías
-                    </a>
-                </li>
-            </ul>
-            <div class="buscador">
-               <input type="text" placeholder="Buscar...">
-                   
-                <button>
-
-                    <i class="fa-solid fa-magnifying-glass"></i>
-
-                </button>
-                
-                 
-                 </div>
-        </nav>
-    </header>
-    <h2>Fantasía</h2>
-     <section class="animes">
-    <div class="contenedor">
-        
-
-        <!-- 1 -->
-              <!-- 1 -->
-             <!-- 1 -->
-            <!-- 1 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/3NyQpXmkaBVWgYM8miDHEFqGMCB.jpg">
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img src="https://www.themoviedb.org/t/p/w1280/q3Aa175OD5PDlV1OpYfL6Gvano8.jpg" />
+                    </div>
+                    <p>Record of Lodoss War</p>
+                </div>
             </div>
-            <p>Frieren: Beyond Journey's End</p>
-        </div>
-
-        <!-- 2 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/iPJtVqLSW9dBXRsUb42SKC3Ueys.jpg">
-            </div>
-            <p>Delicious in Dungeon</p>
-        </div>
-
-        <!-- 3 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/n30CBH4BoN5Z34tCpOWIPGJYOaS.jpg">
-            </div>
-            <p>Made in Abyss</p>
-        </div>
-
-        <!-- 4 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://www.themoviedb.org/t/p/w1280/48c5cdDOHCGzhH9V1qiIgptc5ma.jpg">
-            </div>
-            <p>Berserk</p>
-        </div>
-
-        <!-- 5 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://www.themoviedb.org/t/p/w1280/8hMJiFNO4CmySBXgDKlg8axt5oe.jpg">
-            </div>
-            <p>The Seven Deadly Sins</p>
-        </div>
-
-        <!-- 6 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg">
-            </div>
-            <p>Black Clover</p>
-        </div>
-
-        <!-- 7 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://www.themoviedb.org/t/p/w1280/z31dJXQ3G5TYCtQa4h67NoOtxEO.jpg">
-            </div>
-            <p>Fate/Zero</p>
-        </div>
-
-        <!-- 8 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/7pL2wGmy92v31ceYvCVIg4ilwLr.jpg">
-            </div>
-            <p>Noragami</p>
-        </div>
-
-        <!-- 9 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/vshFBPrMazfyjFNbWoRJRbnBhZg.jpg">
-            </div>
-            <p>Magi: The Labyrinth of Magic</p>
-        </div>
-
-        <!-- 10 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/mLSJO9lj2RMHdzHJMNMoksmwlbv.jpg">
-            </div>
-            <p>Dororo</p>
-        </div>
-
-        <!-- 11 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/ve6wy4KrcU7Lo6WuGb5Zqru3Ds.jpg">
-            </div>
-            <p>Rokka: Braves of the Six Flowers</p>
-        </div>
-
-        <!-- 12 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://www.themoviedb.org/t/p/w1280/Af8QiCDpFvYGh5ZVBWlAWlgaDL8.jpg">
-            </div>
-            <p>Rage of Bahamut: Genesis</p>
-        </div>
-
-        <!-- 13 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/xXGAFMGiG55oS8uzuVz7V5JxFb2.jpg">
-            </div>
-            <p>The Ancient Magus' Bride</p>
-        </div>
-
-        <!-- 14 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://www.themoviedb.org/t/p/w1280/ls3QpjJAzXFPtpKIV086ve14plZ.jpg">
-            </div>
-            <p>Claymore</p>
-        </div>
-
-        <!-- 15 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://www.themoviedb.org/t/p/w1280/dY2oCQXBGDzoeUu1GxaGynHFs1R.jpg">
-            </div>
-            <p>Goblin Slayer</p>
-        </div>
-
-        <!-- 16 -->
-        <!-- 16 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/pPpUEVN9229LGwvYwcHNCmX7hxJ.jpg">
-            </div>
-            <p>Akame ga Kill!</p>
-        </div>
-
-        <!-- 17 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/5IlxL2PfQ8CyY4TLRru9TcU56b3.jpg">
-            </div>
-            <p>Seraph of the End</p>
-        </div>
-
-        <!-- 18 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://www.themoviedb.org/t/p/w1280/lKXe7Km2lwIIjLzU4vIJxfNy8yg.jpg">
-            </div>
-            <p>The Heroic Legend of Arslan</p>
-        </div>
-
-        <!-- 19 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://media.themoviedb.org/t/p/w600_and_h900_face/hUo1FNB9WZZZi4pOJ2YE7Vq5UcF.jpg">
-            </div>
-            <p>Granblue Fantasy</p>
-        </div>
-
-        <!-- 20 -->
-        <div class="tarjeta">
-            <div class="imagen">
-                <img src="https://www.themoviedb.org/t/p/w1280/q3Aa175OD5PDlV1OpYfL6Gvano8.jpg">
-            </div>
-            <p>Record of Lodoss War</p>
-        </div>
-
-        </div>
-         
-</section>
+        </section>
+    </body>
+</html>
